@@ -1,17 +1,24 @@
-body {
+html, body {
   margin: 0;
   padding: 0;
+  min-height: 100%;
+  width: 100%;
+  overflow-x: hidden;        
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f2f4f8;
+  background-color: #0f172a;
+  color: #f1f5f9;
+  scroll-behavior: smooth;
 }
 
+
 .app-container {
-  max-width: 1000px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 2rem;
-  background: linear-gradient(to bottom right, #ffffff, #f0f4ff);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  border-radius: 12px;
+  background: linear-gradient(to right, #334155, #1e293b);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  overflow-x: hidden;
+  box-sizing: border-box;      
 }
 
 .app-heading {
@@ -20,16 +27,25 @@ body {
   justify-content: center;
   gap: 0.6rem;
   margin-bottom: 1rem;
-  color: #222;
   font-size: 2.25rem;
   font-weight: 700;
 }
 
-.user-icon {
-  font-size: 1.8rem;
-  color: #222;
+.gradient-text {
+  background: linear-gradient(to right, #e2e8f0, #a5c2e9);
+  -webkit-background-clip: text;
+  background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  color: transparent; 
 }
 
+/* Icon style */
+.user-icon {
+  font-size: 1.8rem;
+  color: #e2e8f0;
+}
+
+/* Responsive fixes */
 @media (max-width: 480px) {
   .app-container {
     padding: 1.2rem;

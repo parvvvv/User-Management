@@ -1,16 +1,17 @@
 .upload-container {
   margin: 2rem auto 0;
   padding: 2rem;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  background: #1e293b;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
   max-width: 800px;
   text-align: center;
+  color: #f1f5f9;
 }
 
 .upload-heading {
   margin-bottom: 1.5rem;
-  color: #333;
+  color: #e2e8f0;
   font-size: 1.75rem;
   font-weight: 600;
 }
@@ -26,43 +27,47 @@
 
 .upload-input {
   padding: 0.7rem;
-  border: 1px solid #ccc;
+  background-color: #0f172a;
+  color: #f8fafc;
+  border: 1px solid #334155;
   border-radius: 8px;
   font-size: 1rem;
   width: 100%;
   max-width: 300px;
-  transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .upload-input:focus {
-  border-color: #007bff;
+  border-color: #6366f1;
   outline: none;
-  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
 }
 
 .upload-button {
   padding: 0.7rem 1.4rem;
-  background-color: #007bff;
+  background-color: #6366f1;
   color: #fff;
   border: none;
   border-radius: 8px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .upload-button:hover {
-  background-color: #0056b3;
+  background-color: #4f46e5;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.5);
 }
 
 .error-report {
   margin: 1.5rem auto 0;
-  color: #b00020;
-  background: #fff0f0;
+  color: #fecaca;
+  background: #7f1d1d;
   padding: 1rem;
   border-radius: 8px;
-  border-left: 5px solid #dc3545;
+  border-left: 5px solid #f87171;
   max-width: 600px;
   font-size: 0.95rem;
   text-align: left;
@@ -71,7 +76,7 @@
 .error-report h4 {
   margin-bottom: 0.5rem;
   font-weight: 600;
-  color: #a71d2a;
+  color: #fca5a5;
 }
 
 @media (max-width: 480px) {

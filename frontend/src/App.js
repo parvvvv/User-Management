@@ -22,7 +22,7 @@ const App = () => {
 
   return (
     <div className="app-container">
-      <h1 className="app-heading">
+      <h1 className="app-heading gradient-text">
         <FaUser className="user-icon" />
         User Management System
       </h1>

@@ -1,34 +1,42 @@
+body {
+  background-color: #0f172a;
+  font-family: 'Inter', sans-serif;
+}
+
 .download-section {
   margin: 2rem auto 0;
   padding: 2rem;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  background: #1e293b;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
   max-width: 600px;
   text-align: center;
+  color: #f1f5f9;
 }
 
 .download-heading {
   margin-bottom: 1.5rem;
-  color: #333;
+  color: #e2e8f0;
   font-size: 1.75rem;
   font-weight: 600;
 }
 
 .download-button {
   padding: 0.75rem 1.5rem;
-  background-color: #007bff;
+  background-color: #6366f1;
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 1rem;
-  font-weight: 500;
-  transition: background-color 0.25s ease;
+  font-weight: 600;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
   cursor: pointer;
 }
 
 .download-button:hover {
-  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.6);
+  background-color: #4f46e5;
 }
 
 @media (max-width: 480px) {
@@ -41,5 +49,20 @@
     max-width: 300px;
     font-size: 0.95rem;
     padding: 0.7rem;
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
